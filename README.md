@@ -28,6 +28,6 @@
 (in another terminal)
 
 - `curl -X POST -d 'name=ajit&age=21' https://<route>/user/publish`
-(the <route> will be the generated PCF route for pubsub `cf app pubsub | grep routes`)
+(A route has been generated for pubsub app and can be identified by executing `cf app pubsub | grep routes`)
 
 Change the name and age in the payload and see if the stream filters it or not...
